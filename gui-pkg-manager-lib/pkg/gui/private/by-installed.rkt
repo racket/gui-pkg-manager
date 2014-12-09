@@ -47,6 +47,7 @@
             [(link) "Link"]
             [(static-link) "Static link"]
             [(file) "File"]
+            [(dir) "Directory copy"]
             [(clone) "Clone"])
           (cadr s)))
 

@@ -600,9 +600,10 @@
                     (selected-type))
            (add-kwd-arg '#:type (selected-type)))
          (when (and (not update-by-name?)
-                    (send link-dir-checkbox get-value)
                     (eq? 'dir (or (selected-type) (get-inferred-actual-type))))
-             (add-kwd-arg '#:link #t))
+           (if (send link-dir-checkbox get-value)
+               (add-kwd-arg '#:link #t)
+               (add-kwd-arg '#:copy #t)))
          (let ([scope (selected-scope)])
            (unless (and (equal? scope (default-pkg-scope))
                         ;; Don't let `update' infer a scope itself:

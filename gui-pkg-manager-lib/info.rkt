@@ -4,7 +4,7 @@
 
 (define deps '("base"
                "gui-lib"
-               "string-constants-lib"))
+               ["string-constants-lib" #:version "1.9"]))
 
 (define pkg-desc "implementation (no documentation) part of \"gui-pkg-manager\"")
 

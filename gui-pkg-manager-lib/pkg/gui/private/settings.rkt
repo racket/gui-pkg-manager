@@ -31,8 +31,8 @@
                              (with-pkg-lock
                               (pkg-config #t (list "default-scope"
                                                    (if (= 0 (send c get-selection))
-                                                       "installation"
-                                                       "user")))))))
+                                                       (string-constant install-pkg-installation)
+                                                       (string-constant install-pkg-user))))))))
                         (adjust-all))]
            [choices (list (string-constant install-pkg-installation)
                           (string-constant install-pkg-user))]))

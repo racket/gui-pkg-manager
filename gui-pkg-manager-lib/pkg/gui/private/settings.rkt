@@ -100,7 +100,7 @@
                                                                   (and (url-scheme u)
                                                                        (or (eq? (url-scheme u) 'file)
                                                                            (url-host u)))))
-                                                   "http://..."
+                                                   "https://…"
                                                    '(disallow-invalid)))
                                         (when s
                                           (adjust-catalogs

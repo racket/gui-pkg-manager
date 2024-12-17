@@ -192,7 +192,7 @@
                         (string-constant install-pkg-abort-demote)
                         (lambda (names scope)
                           (apply
-                           pkg-remove-command
+                           pkg-uninstall-command
                            #:batch #t
                            #:demote #t
                            #:scope scope
@@ -209,7 +209,7 @@
                                   (really-remove? names #:parent (get-top-level-window)))
                         (lambda (names scope)
                           (apply
-                           pkg-remove-command
+                           pkg-uninstall-command
                            #:batch #t
                            #:scope scope
                            names))))]))

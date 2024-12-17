@@ -194,7 +194,7 @@
                           (string-constant install-pkg-abort-remove)
                           (lambda ()
                             (apply
-                             pkg-remove-command
+                             pkg-uninstall-command
                              #:scope scope
                              names)))
                          (set-box! s #f)
